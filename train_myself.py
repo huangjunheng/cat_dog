@@ -30,7 +30,7 @@ test_iters = DataLoader(test_dataset, batch_size=batchsz, shuffle=True)
 
 device = torch.device('cuda:0')
 
-# train_model = resnet50(pretrained=True)
+# train_model = resnet50(pretrained=True)   # 可以使用pytorch已经train好的网络， 效果很好
 # net = nn.Sequential(
 #     *list(train_model.children())[:-1],
 #     Flatten(),
